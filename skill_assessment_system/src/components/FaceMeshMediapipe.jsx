@@ -75,7 +75,7 @@ const FaceLandmarkerComponent = () => {
               console.log('Head Pose:', headPose);
 
               // Check if user is looking at the screen
-              if (Math.abs(headPose.yaw) < 10) { // Change threshold as needed
+              if (Math.abs(headPose.yaw) < 20) { // Change threshold as needed
                 setLookingAtScreen(true);
                 console.log('User is looking at the screen');
               } else {
